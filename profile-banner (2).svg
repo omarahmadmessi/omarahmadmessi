@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title">
+  <title id="title">Omar Ahmad — Full Stack Developer Animated Banner</title>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#071029"/>
+      <stop offset="1" stop-color="#07183a"/>
+    </linearGradient>
+    <linearGradient id="techGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#7b61ff"/>
+    </linearGradient>
+    <mask id="mask">
+      <rect x="0" y="0" width="1200" height="260" fill="#fff" />
+      <rect id="maskRect" x="-1200" y="0" width="1200" height="260" fill="#000">
+        <animate attributeName="x" from="-1200" to="1200" dur="2.6s" begin="0.5s" fill="freeze" />
+      </rect>
+    </mask>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <!-- floating circle -->
+  <circle cx="1040" cy="40" r="44" fill="#00d4ff" opacity="0.3">
+    <animate attributeName="cy" dur="6s" values="30;60;40;30" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- avatar -->
+  <g transform="translate(60,60)">
+    <rect x="-6" y="-6" width="152" height="152" rx="24" fill="#071026" stroke="url(#techGrad)" stroke-width="2"/>
+    <text x="70" y="68" font-size="56" font-weight="700" fill="#fff" font-family="Segoe UI, Roboto" text-anchor="middle">OA</text>
+  </g>
+
+  <!-- name + typing role -->
+  <g transform="translate(250,100)" font-family="Inter, 'Segoe UI', Roboto" fill="#fff">
+    <text x="0" y="0" font-size="34" font-weight="800">Omar Ahmad</text>
+    <g transform="translate(0,36)" mask="url(#mask)">
+      <text x="0" y="0" font-size="18" fill="#c7e9ff" font-weight="600">
+        Full-Stack Developer • PHP • Laravel • React • Python • Figma
+      </text>
+    </g>
+    <text x="0" y="66" font-size="14" fill="#9bb8d6">
+      Building admin & accounting systems • Focused on UX & performance
+    </text>
+  </g>
+
+  <!-- blinking cursor -->
+  <rect x="870" y="118" width="8" height="18" fill="#c7e9ff">
+    <animate attributeName="opacity" dur="1s" values="1;0;1" repeatCount="indefinite"/>
+  </rect>
+</svg>
