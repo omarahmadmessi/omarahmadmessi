@@ -1,6 +1,7 @@
 <!-- ====== Banner ====== -->
 <p align="center">
-  <img src="./profile-banner (2).svg" alt="Omar Ahmad — Full Stack Developer" width="100%" />
+  <!-- إذا بدك أنيميشن حط GIF -->
+  <img src="./profile-banner.gif" alt="Omar Ahmad — Full Stack Developer" width="100%" />
 </p>
 
 ---
